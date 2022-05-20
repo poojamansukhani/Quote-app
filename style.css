@@ -113,3 +113,8 @@ img{max-width: 100%;}
     flex-direction: column;
     height: 100%;
 }
+@media(max-width:767px){
+    .container{width: 97vw;height: 50vh;}
+    .inner{width: 94%;}
+
+}
