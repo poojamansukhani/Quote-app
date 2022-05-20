@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+a:focus{outline: none;}
+img{max-width: 100%;}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 70vh;
+    background: rgb(29, 155, 240);
+    border-radius: 7px;
+    overflow: hidden;
+    color: #797d7f;
+    letter-spacing: 0.5px;
+    place-items: center;
+}
+.inner{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 40%);
+}
+.number{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right:0;
+    width: 20px;
+    color: rgba(255,255,255,0.7);
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+}
+.number img{
+    width: 20px;
+    cursor: pointer;
+    animation: rotate 1s linear;
+}
+.number:hover{
+    animation: rotate 1s linear;
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.quotes{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.nq{position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;}
+#newQuotes{
+    background: rgb(29, 155, 240);
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;   
+}
+.startQuote{
+    color: #e9e9e9;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#quotes{
+    font-style: italic;
+    color: #c5bebe;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    
+}
+#author{
+    text-align: right;
+    color: #000;
+    font: 16px;
+}
+.text{
+    padding: 50px 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
